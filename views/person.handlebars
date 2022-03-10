@@ -1,0 +1,19 @@
+<h2> I SHALL NOW TALK ABOUT {{person.name}}</h2>
+
+<h3>Weird thing he likes to call his NAME : {{person.name}}</h3>
+
+{{#if person.dob}}
+
+<h3>When he got out of his mother : {{person.dob}}</h3>
+
+<h4>The truth about this dude: {{person.txt}}</h4>
+
+<ul>
+  {{#each person.hobbies}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+{{/if}}
+
+<img src={{person.imageurl}} alt="photo of the person">
